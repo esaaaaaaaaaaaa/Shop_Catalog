@@ -1,77 +1,98 @@
-# To-Do List
+# Shop Catalog
 
 ## Deskripsi Aplikasi
 
-To-Do List adalah aplikasi berbasis React Native (Expo) yang digunakan untuk mencatat dan mengelola daftar tugas. Aplikasi ini menggunakan AsyncStorage sehingga seluruh data tetap tersimpan meskipun aplikasi ditutup dan dibuka kembali.
+Shop Catalog adalah aplikasi mobile berbasis React Native (Expo) yang menampilkan daftar produk dari REST API. Aplikasi ini memungkinkan pengguna melihat daftar produk, mencari produk berdasarkan nama, serta melihat detail produk secara sederhana.
+
+## API yang Digunakan
+
+API: Fake Store API
+
+Endpoint:
+
+* `https://fakestoreapi.com/products`
+
+Metode:
+
+* `GET`
+
+Data yang diambil:
+
+* Nama produk
+* Harga
+* Gambar produk
+* Deskripsi
+* Kategori
+* Rating
 
 ## Fitur
 
-### Level 1 (Core)
+### Level 1
 
-* ✅ Create (Tambah tugas)
-* ✅ Read (Menampilkan data dari AsyncStorage)
-* ✅ Update (Edit tugas dan ubah status selesai)
-* ✅ Delete (Hapus tugas)
-* ✅ Persistensi data menggunakan AsyncStorage
-* ✅ FlatList
-* ✅ Empty State
+* ✅ Mengambil data dari REST API menggunakan Fetch API
+* ✅ Menampilkan daftar produk menggunakan FlatList
+* ✅ Loading indicator saat proses pengambilan data
+* ✅ Error handling ketika koneksi gagal
+* ✅ Menampilkan data produk dari API
 
-### Level 2 (Pengembangan)
+### Level 2 (Dipilih)
 
-* ✅ Edit tugas
-* ✅ Dark Mode (tersimpan di AsyncStorage)
-* ✅ Search / Filter
-* ✅ Konfirmasi Hapus
-* ✅ Hapus Semua
+* ✅ Search produk berdasarkan nama
+* ✅ Halaman Detail Produk
 
 ## Screenshot
 
-### 1. Tampilan Daftar Tugas
+### 1. Loading Screen
 
-> Tambahkan screenshot halaman utama aplikasi.
-> <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/73820698-fa01-433f-9533-0cec8b9a4361" />
-
-
-### 2. Fitur Level 2
-
-> Tambahkan screenshot fitur Search atau Dark Mode.
-> <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/699c8ec7-207e-45ca-89f9-66bf6eb35d4f" />
+> <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/205860ba-a868-43a9-ba74-3716c15e9d33" />
 
 
-### 3. Bukti Persistensi
-> * Sebelum aplikasi ditutup
-> * <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/9bb2beab-335b-4c2a-bd5e-5902902ce69b" />
+### 2. Success
 
-> * Setelah aplikasi dibuka kembali dengan data yang masih tersimpan
-> * <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/13d59d56-51e2-4075-ba1a-58fc6682a684" />
+> <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/60235796-02e5-44f8-af00-c19c26f64607" />
+
+
+### 3. Error
+
+> <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/a9ae4509-307f-4e95-ab00-f35e8dd4c21f" />
 
 
 ## Cara Menjalankan
 
 1. Clone repository
-2. Install dependency
+
+```bash
+git clone https://github.com/esaaaaaaaaaaaa/Shop_Catalog.git
+```
+
+2. Masuk ke folder project
+
+```bash
+cd Shop_Catalog
+```
+
+3. Install dependency
 
 ```bash
 npm install
 ```
 
-3. Jalankan aplikasi
+4. Jalankan aplikasi
 
 ```bash
 npx expo start
 ```
 
-4. Scan QR Code menggunakan aplikasi Expo Go pada smartphone.
+5. Scan QR Code menggunakan aplikasi Expo Go pada perangkat Android atau iOS.
 
 ## Tech Stack
 
 * React Native
 * Expo
-* JavaScript
-* AsyncStorage
+* JavaScript (ES6)
+* Fetch API
+* React Navigation
+* FlatList
 
 ## Expo Snack
-https://snack.expo.dev/@username/todo-list
-
-## Repository GitHub
-https://github.com/username/todo-list
+https://snack.expo.dev/@esaagapesby/shop_catalog
